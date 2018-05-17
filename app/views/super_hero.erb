@@ -2,7 +2,8 @@
 <h2>Team Motto: <%@team[:motto]%></h2>
 
 <%@heros.each do |h|%>
-   <h3>Name:<%=ship.name%></h3>
-<h2>Display your second ship here</h2>	+    <h2>Type:<%=ship.type%></h2>
-   <h2>Booty:<%=ship.booty%></h2>
+   <h3>Hero Name: <%=h.name%></h3>
+   <h3>Hero Power: <%=h.power%></h3>
+   <h3>Hero</h3>
+
     <%end%>
