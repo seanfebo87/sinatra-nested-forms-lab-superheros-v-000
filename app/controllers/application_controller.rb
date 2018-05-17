@@ -10,10 +10,10 @@ class App < Sinatra::Base
   
   post "/teams" do 
    @team = Team.new(params[:team])
-+   params[:team][:super_heros].each do |hero|
-+      Ship.new(hero)
-+     end
-+    @heros = SuperHero.all
+   params[:team][:super_heros].each do |hero|
+      Ship.new(hero)
+     end
+    @heros = SuperHero.all
     erb :super_hero
   end
 
